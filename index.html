@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Enterprise Technology Solutions</title>
+
+  <style>
+    :root {
+      --primary: #0b4ea2;
+      --dark: #0a0a0a;
+      --light: #f6f7fb;
+      --border: #e5e7eb;
+      --muted: #6b7280;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      color: #111;
+      background: #fff;
+    }
+
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
+
+    header {
+      position: sticky;
+      top: 0;
+      background: #fff;
+      border-bottom: 1px solid var(--border);
+      z-index: 100;
+    }
+
+    .nav {
+      max-width: 1200px;
+      margin: auto;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 14px 18px;
+    }
+
+    .logo {
+      font-size: 22px;
+      font-weight: 800;
+      color: var(--primary);
+    }
+
+    .menu {
+      display: flex;
+      gap: 22px;
+      font-size: 14px;
+      font-weight: 600;
+    }
+
+    .menu-item {
+      position: relative;
+    }
+
+    .mega {
+      position: absolute;
+      top: 44px;
+      left: 0;
+      width: 900px;
+      display: none;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 32px;
+      padding: 28px;
+      background: #f3f4f6;
+      border-radius: 12px;
+      box-shadow: 0 20px 40px rgba(0,0,0,.15);
+    }
+
+    .menu-item:hover .mega {
+      display: grid;
+    }
+
+    .mega-col h4 {
+      margin: 0 0 12px;
+      font-size: 14px;
+    }
+
+    .mega-col a {
+      display: block;
+      margin: 6px 0;
+      font-size: 13px;
+      color: #111;
+    }
+
+    .hero {
+      background: linear-gradient(120deg, #0b4ea2, #0e7490);
+      color: #fff;
+    }
+
+    .hero-wrap {
+      max-width: 1200px;
+      margin: auto;
+      display: grid;
+      grid-template-columns: 1.2fr .8fr;
+      gap: 32px;
+      padding: 80px 18px;
+    }
+
+    .hero h1 {
+      font-size: 42px;
+      line-height: 1.2;
+      margin-bottom: 16px;
+    }
+
+    .hero p {
+      font-size: 18px;
+      opacity: .95;
+    }
+
+    .btn {
+      display: inline-block;
+      margin-top: 22px;
+      padding: 12px 22px;
+      background: #fff;
+      color: var(--primary);
+      font-weight: 700;
+      border-radius: 4px;
+    }
+
+    .hero-card {
+      background: #fff;
+      color: #111;
+      padding: 22px;
+      border-radius: 8px;
+    }
+
+    section {
+      padding: 64px 18px;
+    }
+
+    .wrap {
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    .title {
+      font-size: 28px;
+      margin-bottom: 24px;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 20px;
+    }
+
+    .card {
+      background: var(--light);
+      padding: 22px;
+      border-radius: 10px;
+    }
+
+    footer {
+      background: var(--dark);
+      color: #e5e7eb;
+    }
+
+    .footer-wrap {
+      max-width: 1200px;
+      margin: auto;
+      padding: 40px 18px;
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 22px;
+    }
+
+    footer h4 {
+      margin-bottom: 12px;
+    }
+
+    footer a {
+      display: block;
+      font-size: 14px;
+      margin: 6px 0;
+      color: #cbd5f5;
+    }
+
+    .copyright {
+      text-align: center;
+      padding: 14px;
+      font-size: 13px;
+      color: #9ca3af;
+      border-top: 1px solid #1f2937;
+    }
+
+    @media (max-width: 900px) {
+      .menu {
+        display: none;
+      }
+      .hero-wrap,
+      .grid,
+      .footer-wrap {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+<header>
+  <div class="nav">
+    <div class="logo">HCLTech</div>
+
+    <nav class="menu">
+      <div class="menu-item">
+        <a href="#">What We Do</a>
+        <div class="mega">
+          <div class="mega-col">
+            <h4>AI & Automation</h4>
+            <a href="#">Generative AI</a>
+            <a href="#">AI Engineering</a>
+            <a href="#">Intelligent Platforms</a>
+          </div>
+          <div class="mega-col">
+            <h4>Applications</h4>
+            <a href="#">Advisory</a>
+            <a href="#">Enterprise Apps</a>
+            <a href="#">Modernization</a>
+          </div>
+          <div class="mega-col">
+            <h4>Digital Services</h4>
+            <a href="#">Cloud</a>
+            <a href="#">Cybersecurity</a>
+            <a href="#">Digital Workplace</a>
+          </div>
+          <div class="mega-col">
+            <h4>Operations</h4>
+            <a href="#">IT Services</a>
+            <a href="#">Networks</a>
+            <a href="#">Supply Chain</a>
+          </div>
+        </div>
+      </div>
+
+      <a href="#">Industries</a>
+      <a href="#">Resources</a>
+      <a href="#">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="hero-wrap">
+    <div>
+      <h1>Supercharging Progress Through Digital</h1>
+      <p>Technology-led solutions that help enterprises scale faster.</p>
+      <a href="#" class="btn">Explore Services</a>
+    </div>
+
+    <div class="hero-card">
+      <h3>Featured Insight</h3>
+      <p>Unlock cloud, AI and engineering capabilities to drive transformation.</p>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <h2 class="title">Our Services</h2>
+    <div class="grid">
+      <div class="card"><h3>Digital</h3><p>Cloud, data and AI solutions.</p></div>
+      <div class="card"><h3>Engineering</h3><p>Product engineering and R&D.</p></div>
+      <div class="card"><h3>Operations</h3><p>IT and business services.</p></div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="footer-wrap">
+    <div><h4>Company</h4><a href="#">About</a><a href="#">Leadership</a></div>
+    <div><h4>Services</h4><a href="#">Digital</a><a href="#">Engineering</a></div>
+    <div><h4>Careers</h4><a href="#">Jobs</a><a href="#">Culture</a></div>
+    <div><h4>Contact</h4><a href="#">Locations</a><a href="#">Support</a></div>
+  </div>
+
+  <div class="copyright">
+    © 2026 Demo Website. All rights reserved.
+  </div>
+</footer>
+
+</body>
+</html>
